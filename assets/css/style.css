@@ -12976,13 +12976,17 @@ body.compensate-for-scrollbar {
   .BannerHero-video video {
     position: absolute;
   }
+
   .BannerSlides-containerPoster {
-    display: none;
-    height: calc(var(--vh) * 90);
-    position: relative;
-  }
-  .desktop .BannerSlides-containerPoster {
     display: block;
+  }
+
+  @media screen and (max-width: 678px) {
+    .BannerSlides-containerPoster {
+      display: none;
+      height: 90vh;
+      position: relative;
+    }
   }
   .BannerSlides-linkWrapper {
     display: -webkit-box;
@@ -13166,8 +13170,13 @@ body.compensate-for-scrollbar {
     -webkit-transform: none !important;
     transform: none !important;
   }
-  .desktop .BannerSlides-containerCards {
+  .BannerSlides-containerCards {
     display: none;
+  }
+  @media screen and (max-width: 678px) {
+    .BannerSlides-containerCards {
+      display: block;
+    }
   }
   .BannerSlides-containerCards .swiper-container {
     overflow: visible;
