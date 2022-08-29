@@ -12977,7 +12977,7 @@ body.compensate-for-scrollbar {
     position: absolute;
   }
 
-  .BannerSlides-containerPoster {
+  .desktop .BannerSlides-containerPoster {
     display: block;
   }
 
@@ -13170,7 +13170,7 @@ body.compensate-for-scrollbar {
     -webkit-transform: none !important;
     transform: none !important;
   }
-  .BannerSlides-containerCards {
+  .desktop .BannerSlides-containerCards {
     display: none;
   }
   @media screen and (max-width: 678px) {
