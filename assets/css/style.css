@@ -3926,7 +3926,7 @@ body.compensate-for-scrollbar {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.6;
-    color: #000;
+    color: #46443A;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #d6d6d6;
@@ -3938,6 +3938,7 @@ body.compensate-for-scrollbar {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       -webkit-box-shadow 0.15s ease-in-out;
+      font-family: 'Roboto', sans-serif;
   }
   @media (prefers-reduced-motion: reduce) {
     .FormBuilder input[type="email"],
@@ -12976,17 +12977,13 @@ body.compensate-for-scrollbar {
   .BannerHero-video video {
     position: absolute;
   }
-
+  .BannerSlides-containerPoster {
+    display: none;
+    height: calc(var(--vh) * 90);
+    position: relative;
+  }
   .desktop .BannerSlides-containerPoster {
     display: block;
-  }
-
-  @media screen and (max-width: 678px) {
-    .BannerSlides-containerPoster {
-      display: none;
-      height: 90vh;
-      position: relative;
-    }
   }
   .BannerSlides-linkWrapper {
     display: -webkit-box;
@@ -13172,11 +13169,6 @@ body.compensate-for-scrollbar {
   }
   .desktop .BannerSlides-containerCards {
     display: none;
-  }
-  @media screen and (max-width: 678px) {
-    .BannerSlides-containerCards {
-      display: block;
-    }
   }
   .BannerSlides-containerCards .swiper-container {
     overflow: visible;
@@ -14167,7 +14159,8 @@ body.compensate-for-scrollbar {
   }
   @media screen and (max-width: 768px) {
     .Card-label--1 {
-      font-size: 1.5rem;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
     }
   }
   .Card-label--2 {
@@ -16133,7 +16126,7 @@ body.compensate-for-scrollbar {
   }
   .HpSlider-title {
     font-size: 36.83747px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: 500;
     margin: 0 0 2rem;
     text-shadow: 2px 3px 4px rgb(0 0 0 / 20%);
@@ -16228,18 +16221,7 @@ body.compensate-for-scrollbar {
     margin-left: 9.5%;
     margin-right: -9.5%;
   }
-  .HpSlider-nav {
-    right: 4.26667vw;
-    bottom: 4.26667vw;
-    position: absolute;
-    z-index: 1;
-    display: none;
-  }
-  @media (min-width: 768px) {
-    .HpSlider-nav {
-      right: 3.33333vw;
-    }
-  }
+
   @media (min-width: 768px) {
     .HpSlider-nav {
       bottom: 3.33333vw;
@@ -17098,7 +17080,7 @@ body.compensate-for-scrollbar {
   .Newsletter {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: #efefef !important;
+    background-color: #d8d5ca !important;
   }
   @media (min-width: 768px) {
     .Newsletter {
@@ -17112,9 +17094,9 @@ body.compensate-for-scrollbar {
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .Newsletter .alert {
     margin-bottom: 0 !important;
@@ -17150,8 +17132,7 @@ body.compensate-for-scrollbar {
   .Newsletter-title {
     font-size: 23.68933px;
     margin: 0;
-    font-family: NoeDisplay, serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Roboto', sans-serif;
   }
   @media (min-width: 320px) and (max-width: 768px) {
     .Newsletter-title {
@@ -17188,6 +17169,7 @@ body.compensate-for-scrollbar {
     text-transform: uppercase;
     margin: 0;
     font-weight: 300;
+    line-height: 1.3;
   }
   @media (min-width: 320px) and (max-width: 768px) {
     .Newsletter-subtitle {
@@ -20702,7 +20684,7 @@ body.compensate-for-scrollbar {
   .Video.Video--right [data-scroll-speed] {
     -webkit-transform: none !important;
     transform: none !important;
-    will-transform: none;
+    -will-transform: none;
   }
   .Video--full .Video-container {
     padding: 0;
@@ -20840,3 +20822,6 @@ body.compensate-for-scrollbar {
     -webkit-transform: translate(-50%, -50%) scale(1.1);
     transform: translate(-50%, -50%) scale(1.1);
   }
+
+  
+  
